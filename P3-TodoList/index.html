@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <style>
+    body { font-family: sans-serif; display: flex; justify-content: center; margin-top: 50px; }
+    .container { width: 300px; }
+    input { width: 80%; padding: 8px; }
+    button { padding: 8px; }
+    ul { list-style: none; padding: 0; }
+    li { background: #000000; margin-top: 5px; padding: 10px; display: flex; justify-content: space-between; }
+    .remove { cursor: pointer; color: red; }
+  </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+  <div class="container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
